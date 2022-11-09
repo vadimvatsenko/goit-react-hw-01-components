@@ -88,19 +88,23 @@ import el from "./json/el.json";
 
 
 // функция с большой буквы, потому что jsx аонимает маленкую как строку
+
+//компоненты
 function Painting(props) {
-  console.log(props);
+  //или function Painting({url, title, authorUrl, authorTag, price})
+  const {url, title, authorUrl, authorTag, price} = props
+
   return  <div>
-    <img src={ props.url } alt={ props.title} width="200" />
-    <h2>{props.title}</h2>
-    <p>Автор: <a href={ props.authorUrl }>{ data.author.tag}</a></p>
-  <p>Цена: {props.price} кредитов</p>
+    <img src={ url } alt={ title} width="200" />
+    <h2>{title}</h2>
+    <p>Автор: <a href={ authorUrl }>{ authorTag}</a></p>
+  <p>Цена: {price} кредитов</p>
   <p>Доступность: заканчивается или есть в наличии</p>
   <button type="button">Добавить в корзину</button>
   </div>
 }
 
-const data = el[0]
+const data = el[2]
 
 //пропсы передаются в функцию выше
 ReactDOM.createRoot(document.getElementById('root'))
