@@ -84,37 +84,55 @@ import ReactDOM from 'react-dom/client';// импорт DOM
 // ReactDOM.createRoot(document.getElementById('root')).render(paiting);
 
 //===5
-import el from "./json/el.json";
+// import el from "./json/el.json";
+// import App from './components/App'
+
+
+// // функция с большой буквы, потому что jsx аонимает маленкую как строку
+
+// //компоненты
+// function Painting(props) {
+//   //или function Painting({url, title, authorUrl, authorTag, price})
+//   const {url, title, authorUrl, authorTag, price} = props
+
+//   return  <div>
+//     <img src={ url } alt={ title} width="200" />
+//     <h2>{title}</h2>
+//     <p>Автор: <a href={ authorUrl }>{ authorTag}</a></p>
+//   <p>Цена: {price} кредитов</p>
+//   <p>Доступность: заканчивается или есть в наличии</p>
+//   <button type="button">Добавить в корзину</button>
+//   </div>
+// }
+
+// const data = el[2]
+
+// //пропсы передаются в функцию выше
+// ReactDOM.createRoot(document.getElementById('root'))
+//   .render(<Painting
+//     url={data.url}
+//     title={data.title}
+//     authorUrl={data.author.url}
+//     authorTag={data.author.tag}
+//     price={data.price}
+//   />);
+
+
+//===6
+
+import App from './components/App'
 
 
 // функция с большой буквы, потому что jsx аонимает маленкую как строку
 
-//компоненты
-function Painting(props) {
-  //или function Painting({url, title, authorUrl, authorTag, price})
-  const {url, title, authorUrl, authorTag, price} = props
 
-  return  <div>
-    <img src={ url } alt={ title} width="200" />
-    <h2>{title}</h2>
-    <p>Автор: <a href={ authorUrl }>{ authorTag}</a></p>
-  <p>Цена: {price} кредитов</p>
-  <p>Доступность: заканчивается или есть в наличии</p>
-  <button type="button">Добавить в корзину</button>
-  </div>
-}
 
 const data = el[2]
 
 //пропсы передаются в функцию выше
 ReactDOM.createRoot(document.getElementById('root'))
-  .render(<Painting
-    url={data.url}
-    title={data.title}
-    authorUrl={data.author.url}
-    authorTag={data.author.tag}
-    price={data.price}
-  />);
+  .render(<App/>);
+
 
 
 
