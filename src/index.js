@@ -1,4 +1,6 @@
-// import React from "react";// импортируем реакт
+// https://www.npmjs.com/package/prop-types нужно установить
+
+import React from "react";// импортируем реакт
 import ReactDOM from 'react-dom/client';// импорт DOM
 
 // если в файле есть jsx то react не нужно импортировать
@@ -127,16 +129,17 @@ import App from './components/App'
 
 
 
-const data = el[2]
+
 
 //пропсы передаются в функцию выше
-ReactDOM.createRoot(document.getElementById('root'))
-  .render(<App/>);
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 
-
-
-
+// исходный файл
 // import React from 'react';
 // import ReactDOM from 'react-dom/client';
 // import { App } from 'components/App';
