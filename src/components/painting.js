@@ -9,7 +9,7 @@ export default function Painting(props) {
 
 
   return ( <div>
-    <img src={ imgUrl } alt={ title} width="200" />
+    <img src={ imgUrl ?? defaultImg  } alt={ title} width="200" />
     <h2>{title}</h2>
     <p>Автор: <a href={ authorUrl }>{ authorTag}</a></p>
   <p>Цена: {price} кредитов</p>
@@ -20,14 +20,14 @@ export default function Painting(props) {
   )
 }
 
-//ПротоТипы, что бы проверять данные на тип
+//ПротоТипы, что бы проверять данные на тип isReq обязательный пропс
 Painting.propTypes = {
-  imgUrl: PropTypes.string,
-  title: PropTypes.string,
-  authorUrl: PropTypes.string,
-  authorTag: PropTypes.string,//pts
-  price: PropTypes.number,//ptn
-  quantity: PropTypes.number
+  imgUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  authorUrl: PropTypes.string.isRequired,
+  authorTag: PropTypes.string.isRequired,//pts
+  price: PropTypes.number.isRequired,//ptn
+  quantity: PropTypes.number.isRequired
 
 }
 

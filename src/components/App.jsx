@@ -79,26 +79,54 @@
 // }
 
 //===3
+// import Painting from "./painting";
+
+// import el from "../json/el.json";
+
+// export default function App() {
+// return (
+//     <div>
+//       {el.map(el =>
+//         <Painting
+//           key={el.id}
+//           imgUrl={el.url}
+//           title={el.title}
+//           authorUrl={el.author.url}
+//           authorTag={el.author.tag}
+//           price={el.price}
+//           quantity={el.quantity}
+//         />)}
+//     </div>
+
+//   )
+// }
+
+//===4
 import Painting from "./painting";
 
 import el from "../json/el.json";
 
+import PropTypes from 'prop-types';
+
+import PaintingList from "./paintingList";
+
+
+
 export default function App() {
+  
 return (
-    <div>
-      {el.map(el =>
-        <Painting
-          imgUrl={el.url}
-          title={el.title}
-          authorUrl={el.author.url}
-          authorTag={el.author.tag}
-          price={el.price}
-          quantity={el.quantity}
-        />)}
+  <div>
+    <PaintingList el={painting } />
     </div>
 
   )
 }
+
+
+
+
+
+
 
 
 
