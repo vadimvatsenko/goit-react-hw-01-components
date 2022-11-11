@@ -102,11 +102,11 @@
 // }
 
 //===4
-import Painting from "./painting";
+// import Painting from "./painting";
 
 import el from "../json/el.json";
 
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import PaintingList from "./paintingList";
 

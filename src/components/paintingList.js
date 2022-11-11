@@ -2,7 +2,7 @@ import Painting from "./painting";
 import PropTypes from 'prop-types'
 
 export default function PaintingList({ el }) {
-    <ul>
+    return (<ul>
     {el.map(el => (
         <li key={el.id}>
         <Painting
@@ -18,6 +18,7 @@ export default function PaintingList({ el }) {
     )
     )}
     </ul>
+    )
 }
 
 
