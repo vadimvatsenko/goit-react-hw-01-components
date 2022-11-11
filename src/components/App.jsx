@@ -106,6 +106,7 @@ export default function App() {
 }
 
 //CNTR+D
+//NEXT REACT
 
 // export const App = () => {
 //   return (
