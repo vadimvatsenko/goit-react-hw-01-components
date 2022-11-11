@@ -1,30 +1,32 @@
 import Painting from "./painting";
 import PropTypes from 'prop-types'
 
-export default function PaintingList({ el }) {
-    return (<ul>
-    {el.map(el => (
-        <li key={el.id}>
-        <Painting
+export default function PaintingList({ items }) {
+
+  return (
+    <ul>
+      {items.map(item => (
+        <li key={item.id}>
+          <Painting
           
-          imgUrl={el.url}
-          title={el.title}
-          authorUrl={el.authorUrl}
-          authorTag={el.authorTag}
-          price={el.price}
-          quantity={el.quantity}
-        />
-      </li>
-    )
-    )}
+            imgUrl={item.url}
+            title={item.title}
+            authorUrl={item.author.url}
+            authorTag={item.author.tag}
+            price={item.price}
+            quantity={item.quantity}
+          />
+        </li>
+      )
+      )}
     </ul>
-    )
+    );
 }
 
 
 
-PaintingList.PropTypes = {
-  el: PropTypes.arrayOf(PropTypes.shape({
+PaintingList.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired
   })),
 }

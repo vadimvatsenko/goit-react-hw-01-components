@@ -7,7 +7,7 @@
 // export default function App() {
 
 //   const element = el.map(e => e);
-  
+
 //   return (
 //     <div>
 //     <Painting
@@ -66,7 +66,7 @@
 // export default function App() {
 
 //   const element = el.map(e => e);
-  
+
 //   return (
 //     <div>
 //       [1,2,3,4,5]
@@ -79,54 +79,31 @@
 // }
 
 //===3
+// key 
 // import Painting from "./painting";
-
-// import el from "../json/el.json";
-
-// export default function App() {
-// return (
-//     <div>
-//       {el.map(el =>
-//         <Painting
-//           key={el.id}
-//           imgUrl={el.url}
-//           title={el.title}
-//           authorUrl={el.author.url}
-//           authorTag={el.author.tag}
-//           price={el.price}
-//           quantity={el.quantity}
-//         />)}
-//     </div>
-
-//   )
-// }
-
-//===4
-// import Painting from "./painting";
-
-import el from "../json/el.json";
-
-// import PropTypes from 'prop-types';
-
 import PaintingList from "./paintingList";
-
-
+import el from "../json/el.json";
+import Section from "./Section";
 
 export default function App() {
-  
   return (
     <div>
-      <PaintingList el={el} />
+      <PaintingList items={el} />
+      <Section title={'TOP SEGA GAMES'} />
+      <Section title={'TOP NES GAMES'} />
+      <Section />
+      <Section title={'TOP PS1 GAMES'}>
+        1213132131321
+      </Section>
+      <Section title={'TOP PS2 GAMES'}>
+        <PaintingList items={el} />
+        <PaintingList items={el} />
+        <PaintingList items={el} />
+      </Section>
     </div>
 
-  );
+  )
 }
-
-
-
-
-
-
 
 
 
