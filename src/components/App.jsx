@@ -114,12 +114,12 @@ import PaintingList from "./paintingList";
 
 export default function App() {
   
-return (
-  <div>
-    <PaintingList el={painting } />
+  return (
+    <div>
+      <PaintingList el={el} />
     </div>
 
-  )
+  );
 }
 
 
