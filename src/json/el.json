@@ -1,10 +1,10 @@
 [{
   "id": "id-1",
   "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/03/df/52/03df522a-dd65-bf79-ea1d-bed8e4204e0b/AppIcon1-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x600wa.png",
-  "title": "Sonic",
-  "price": "10",
+  "title": "I am",
+  "price": 129,
   "author": {
-    "tag": 5,
+    "tag": "cool",
     "url": "https://upload.wikimedia.org/wikipedia/en/0/06/Knuckles_the_Echidna.png"
   },
   "quantity": 100
