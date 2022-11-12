@@ -1,12 +1,16 @@
 
 import ProfileList from "./user/ProfileList";
+import Statistics from "./statistics/StatisticsList";
 import user from "../json/user.json";
+import data from "../json/data.json";
 // import Section from "./Section";
 
 export default function App() {
   return (
-    <ProfileList user={ user} />
-    
+    <div>
+    <ProfileList user={user} />
+      <Statistics statistics={data} />
+  </div>
 
   )
 }
