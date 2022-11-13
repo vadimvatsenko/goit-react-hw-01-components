@@ -7,6 +7,7 @@ export default function Profile(props) {
   const { username, tag, location, avatar, stats: { followers, views, likes } } = props;
 
   return (
+    <section>
     <div className={style.profile}>
     <div className={style.description}>
     <img
@@ -33,7 +34,8 @@ export default function Profile(props) {
       <span className={style.quantity}>{likes}</span>
     </li>
   </ul>
-</div>
+      </div>
+      </section>
   )
 }
 
