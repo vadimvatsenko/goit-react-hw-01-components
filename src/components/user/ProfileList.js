@@ -1,5 +1,5 @@
 import Profile from "./Profile";
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 export default function ProfileList({ user }) {
 
@@ -7,10 +7,10 @@ export default function ProfileList({ user }) {
 
     return (
         <Profile
-        username = {username}
-        tag = {tag}
-        location = {location}
-        avatar = {avatar}
+        username={username}
+        tag={tag}
+        location={location}
+        avatar={avatar}
         followers={followers}
         views={views}
         likes={likes}

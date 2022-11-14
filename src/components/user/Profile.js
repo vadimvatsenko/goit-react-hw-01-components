@@ -1,4 +1,3 @@
-// import defaultImg from './default.webp'// импорт картинки по умолчанию
 import PropTypes from 'prop-types';
 import style from './Profile.module.css'
 

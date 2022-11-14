@@ -1,0 +1,36 @@
+import Statistics from "./Statistics";
+import style from './Statistics.module.css';
+import PropTypes from 'prop-types'
+
+export default function StatisticsList({statistics, title}) {
+
+    return (
+        <section className={style.statistics}>
+        {title && <h2 className={style.title}>{title.toUpperCase()}</h2>}
+        <ul className={style.list}>
+          {statistics.map(({id, label, percentage}) =>(
+            
+            <Statistics
+                key={id}
+                label={label}
+                percentage={percentage}
+              />
+           
+          ))}
+        </ul> 
+      </section>
+    );
+}
+
+
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  statistics: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    }).isRequired
+  ),
+};
