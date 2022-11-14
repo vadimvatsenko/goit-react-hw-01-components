@@ -20,8 +20,8 @@ export default function ProfileList({ user }) {
 
 
 
-// ProfileList.propTypes = {
-//   user: PropTypes.arrayOf(PropTypes.shape({
-//     id: PropTypes.string.isRequired
-//   })),
-// }
+ProfileList.propTypes = {
+    user: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired
+  })),
+}

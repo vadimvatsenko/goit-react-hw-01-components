@@ -2,10 +2,9 @@ import PropTypes from 'prop-types';
 import style from './Friends.module.css'
 
 export default function FriendList({ friends }) {
-
     return (
         <section>
-        <ul>
+        <ul className={style.list}>
             {friends.map(f => (
                 <li key={f.id } className={style.item}>
                     <span className={f.isOnline ? style.online : style.offline}></span>
@@ -18,13 +17,10 @@ export default function FriendList({ friends }) {
     )
 }
 
-// FriendList.propTypes = {
-//   title: PropTypes.string,
-//   statistics: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       label: PropTypes.string.isRequired,
-//       percentage: PropTypes.number.isRequired,
-//     }).isRequired
-//   ),
-// };
+FriendList.propTypes = {
+    id: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    name: PropTypes.string.isRequired
+
+};
