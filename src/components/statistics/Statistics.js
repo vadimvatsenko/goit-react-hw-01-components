@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import style from './Statistics.module.css';
 import getRandomHexColor from '../utils/randomColor'
 

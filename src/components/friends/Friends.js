@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import style from './Friends.module.css'
 
 export default function Friends({id,isOnline,avatar,name }) {

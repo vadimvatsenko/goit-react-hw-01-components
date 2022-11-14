@@ -1,6 +1,6 @@
 import Statistics from "./Statistics";
 import style from './Statistics.module.css';
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 export default function StatisticsList({statistics, title}) {
 
@@ -24,13 +24,13 @@ export default function StatisticsList({statistics, title}) {
 
 
 
-Statistics.propTypes = {
-  title: PropTypes.string,
-  statistics: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      label: PropTypes.string,
-      percentage: PropTypes.number,
-    }).isRequired
-  ),
-};
+// Statistics.propTypes = {
+//   title: PropTypes.string,
+//   statistics: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.string,
+//       label: PropTypes.string,
+//       percentage: PropTypes.number,
+//     }).isRequired
+//   ),
+// };

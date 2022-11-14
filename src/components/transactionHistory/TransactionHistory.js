@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import style from './Transaction.module.css'
 import TransactionHead from './TransactionHead';
 import TransactionList from './TransactionList';
