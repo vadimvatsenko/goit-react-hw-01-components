@@ -1,5 +1,5 @@
 
-import ProfileList from "./user/ProfileList";
+import Profile from "./user/Profile";
 import Statistics from "./statistics/Statistics";
 import FriendList from './friends/FriendList'
 import TransactionHistory from './transactionHistory/TransactionHistory'
@@ -14,7 +14,7 @@ console.log(friends)
 export default function App() {
   return (
     <div>
-      <ProfileList user={user} />
+      <Profile user={user} />
       <Statistics title="Upload stats" statistics={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />;

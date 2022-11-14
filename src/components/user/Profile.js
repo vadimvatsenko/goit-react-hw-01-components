@@ -2,9 +2,9 @@
 import PropTypes from 'prop-types';
 import style from './Profile.module.css'
 
-export default function Profile(props) {
+export default function Profile({user}) {
 
-  const { username, tag, location, avatar, stats: { followers, views, likes } } = props;
+  const { username, tag, location, avatar, stats: { followers, views, likes } } = user;
 
   return (
     <section>
