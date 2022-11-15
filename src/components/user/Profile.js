@@ -1,3 +1,4 @@
+//DONE
 import PropTypes from 'prop-types';
 import style from './Profile.module.css'
 
@@ -47,8 +48,8 @@ Profile.propTypes = {
   followers: PropTypes.number.isRequired,
   views: PropTypes.number.isRequired,
   likes: PropTypes.number.isRequired,
-
-
 }
+
+
 
 

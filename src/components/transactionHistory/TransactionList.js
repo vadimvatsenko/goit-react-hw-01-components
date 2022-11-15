@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 
 export default function TransactionList({ id, type, amount, currency }) {
@@ -11,3 +11,10 @@ export default function TransactionList({ id, type, amount, currency }) {
         </tr>
     );
 }
+
+// TransactionList.propTypes = {
+//     id: PropTypes.string.isRequired,
+//     type: PropTypes.string.isRequired,
+//     amount: PropTypes.string.isRequired,
+//     currency: PropTypes.string.isRequired
+// }

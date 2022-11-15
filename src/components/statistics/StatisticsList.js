@@ -24,7 +24,7 @@ export default function StatisticsList({statistics, title}) {
 
 
 
-// Statistics.propTypes = {
+// StatisticsList.propTypes = {
 //   title: PropTypes.string,
 //   statistics: PropTypes.arrayOf(
 //     PropTypes.shape({

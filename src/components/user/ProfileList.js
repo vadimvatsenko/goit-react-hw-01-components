@@ -1,5 +1,5 @@
+//DONE
 import Profile from "./Profile";
-// import PropTypes from 'prop-types'
 
 export default function ProfileList({ user }) {
 
@@ -18,10 +18,3 @@ export default function ProfileList({ user }) {
     );
 }
 
-
-
-// PaintingList.propTypes = {
-//   items: PropTypes.arrayOf(PropTypes.shape({
-//     id: PropTypes.string.isRequired
-//   })),
-// }

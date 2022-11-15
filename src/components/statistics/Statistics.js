@@ -1,11 +1,12 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import style from './Statistics.module.css';
 import getRandomHexColor from '../utils/randomColor'
 
-export default function Statistics({id, label, percentage}) {
+export default function Statistics({ key, label, percentage }) {
+  console.log(key)
   return (
     <li
-      key={id}
+      key={key}
       className={style.item}
       style={{ backgroundColor: getRandomHexColor() }}>
       <span className={style.label}>{label}</span>
@@ -18,12 +19,7 @@ export default function Statistics({id, label, percentage}) {
 
 
 // Statistics.propTypes = {
-//   title: PropTypes.string,
-//   statistics: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       label: PropTypes.string.isRequired,
-//       percentage: PropTypes.number.isRequired,
-//     }).isRequired
-//   ),
+//   id: PropTypes.string.isRequired,
+//   label: PropTypes.string.isRequired,
+//   percentage: PropTypes.number.isRequired
 // };
