@@ -14,6 +14,6 @@ export default function TransactionList({ type, amount, currency }) {
 
 TransactionList.propTypes = {
     type: PropTypes.string.isRequired,
-    amount: PropTypes.number.isRequired,
+    amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired
 }
