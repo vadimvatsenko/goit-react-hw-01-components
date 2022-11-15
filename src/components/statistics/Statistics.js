@@ -1,12 +1,12 @@
+//DONE
 import PropTypes from 'prop-types';
 import style from './Statistics.module.css';
 import getRandomHexColor from '../utils/randomColor'
 
-export default function Statistics({ key, label, percentage }) {
-  console.log(key)
+export default function Statistics({ label, percentage }) {
+
   return (
     <li
-      key={key}
       className={style.item}
       style={{ backgroundColor: getRandomHexColor() }}>
       <span className={style.label}>{label}</span>
@@ -18,8 +18,7 @@ export default function Statistics({ key, label, percentage }) {
 
 
 
-// Statistics.propTypes = {
-//   id: PropTypes.string.isRequired,
-//   label: PropTypes.string.isRequired,
-//   percentage: PropTypes.number.isRequired
-// };
+Statistics.propTypes = {
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired
+};
