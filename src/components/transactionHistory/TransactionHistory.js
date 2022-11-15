@@ -1,3 +1,4 @@
+// DONE
 import PropTypes from 'prop-types';
 import style from './Transaction.module.css'
 import TransactionHead from './TransactionHead';

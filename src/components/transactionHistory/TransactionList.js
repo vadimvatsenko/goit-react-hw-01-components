@@ -1,5 +1,5 @@
+// DONE
 import PropTypes from 'prop-types';
-
 
 export default function TransactionList({ type, amount, currency }) {
 
